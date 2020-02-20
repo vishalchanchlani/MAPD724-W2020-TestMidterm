@@ -4,6 +4,10 @@ import AVFoundation
 import SpriteKit
 import GameplayKit
 
+// Name : Vishal K Chanchlani
+// Student No : 301090878
+
+
 let screenSize = UIScreen.main.bounds
 var screenWidth: CGFloat?
 var screenHeight: CGFloat?
@@ -76,16 +80,20 @@ class GameScene: SKScene {
         
     }
     
+    //if Plane is dragged down
     func touchDown(atPoint pos : CGPoint)
     {
         self.planeSprite?.TouchMove(newPos: CGPoint(x: -385, y: pos.y))
     }
     
+    //if screen is touched
     func touchMoved(toPoint pos : CGPoint)
     {
         self.planeSprite?.TouchMove(newPos: CGPoint(x: -385, y: pos.y))
     }
     
+    
+    //if Plane is dragged UP
     func touchUp(atPoint pos : CGPoint)
     {
         self.planeSprite?.TouchMove(newPos: CGPoint(x: -385, y: pos.y))
@@ -112,6 +120,7 @@ class GameScene: SKScene {
     }
     
     
+    //Function which updated all Object at regular Interval
     override func update(_ currentTime: TimeInterval)
     {
         self.oceanSprite1?.Update()

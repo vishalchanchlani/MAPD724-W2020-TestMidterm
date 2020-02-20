@@ -4,6 +4,9 @@
 //
 //  Created by Tom Tsiliopoulos on 2020-01-15.
 //  Copyright © 2020 CentennialCollege. All rights reserved.
+
+// Name : Vishal K Chanchlani
+// Student No : 301090878
 //
 
 import UIKit
